@@ -41,7 +41,7 @@ class Ballon {
       this.elm.classList.add("ballon");
       this.elm.style.left = `${this.x}px`;
       this.elm.style.top = `${this.y}px`;
-      this.elm.style.backgroundColor = `rgb(${this.r},${this.g},${this.g})`;
+      this.elm.style.backgroundColor = `rgb(${this.r},${this.g},${this.b})`;
       document.body.append(this.elm);
     }
     move() {

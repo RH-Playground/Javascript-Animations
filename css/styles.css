@@ -30,7 +30,7 @@ body {
     }
 
     50%, 100% {
-        border: 10px solid rgba(197, 197, 197, 0.6)
+        border: 5px solid rgba(197, 197, 197, 0.6)
     }
 }
 
