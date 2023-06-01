@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.cursor {
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition-property: opacity;
+    transition-duration: 500ms;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+}
