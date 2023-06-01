@@ -5,18 +5,33 @@
 .cursor {
     width: 100px;
     height: 100px;
-    background-color: dodgerblue;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 100%;
     position: absolute;
     transform: translate(-50%, -50%);
     visibility: hidden;
     transition-property: opacity;
     transition-duration: 500ms;
+    z-index: 99999;
+    animation-name: cursor;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    box-sizing: content-box;
 }
 
 body {
     min-height: 100vh;
     overflow: hidden;
+}
+
+@keyframes cursor {
+    from {
+        border: 0 solid rgba(255, 0, 85, 0.0)
+    }
+
+    50%, 100% {
+        border: 10px solid rgba(197, 197, 197, 0.6)
+    }
 }
 
 .ballon{
